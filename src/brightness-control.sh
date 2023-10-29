@@ -28,8 +28,8 @@ while true; do
 
     # Check if the value is non-empty and numeric
     if [[ -n "$value" && "$value" =~ ^[0-9]+([.][0-9]+)?$ ]]; then
-        # Calculate level (value divided by 8) and round to nearest integer
-        level=$(printf "%.0f" $(echo "scale=2; $value / 8" | bc))
+        # Calculate level (value divided by 15) and round to nearest integer
+        level=$(printf "%.0f" $(echo "scale=2; $value / 15" | bc))
 
         # Ensure the level is within the valid range (0 to 100)
         if [ "$level" -gt 100 ]; then
