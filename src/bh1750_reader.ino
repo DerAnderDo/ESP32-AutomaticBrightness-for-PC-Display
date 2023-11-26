@@ -36,6 +36,6 @@ void loop() {
   float lux = lightMeter.readLightLevel();
   Serial.print("L: ");
   Serial.print(lux);
-  Serial.println(" lx\n");
+  Serial.println(" lx");
   delay(1000);
 }
